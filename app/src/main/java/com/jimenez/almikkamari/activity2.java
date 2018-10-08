@@ -14,6 +14,8 @@ public class activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         Log.d("act5", "onCreate will run.");
+        Intent i = new Intent(this, MyService.class);
+        startService(i);
     }
 
     @Override

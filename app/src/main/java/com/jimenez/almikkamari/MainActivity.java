@@ -12,7 +12,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
          Log.d("act5", "onCreate activity1 will run.");
+
+        Intent i = new Intent(this, MyService.class);
+        startService(i);
     }
     @Override
     protected void onStart(){
